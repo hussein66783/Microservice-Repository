@@ -1,0 +1,14 @@
+{
+  "name": "gt",
+  "version": "1.0.0",
+  "description": "This simple web application allows users to track their reading progress, mark books as \"currently reading,\" and indicate when a book is \"done reading.\" The user can add books to their reading log, providing an easy way to organize and achieve their reading goals.",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel ./*.html",
+    "build": "parcel  build ./*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
