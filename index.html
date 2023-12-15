@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #app {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #reading-log {
+            list-style: none;
+            padding: 0;
+        }
+
+        .book-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .book-item button {
+            cursor: pointer;
+        }
+
+        .done {
+            color: green;
+        }
+    </style>
+    <title>Reading Progress Tracker</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>Reading Progress Tracker</h1>
+    <form id="add-book-form">
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" required>
+        <button type="button" onclick="addBook()">Add Book</button>
+    </form>
+    <ul id="reading-log"></ul>
+</div>
+
+<script>
+    function addBook() {
+        const titleInput = document.getElementById('book-title');
+        const title = titleInput.value.trim();
+
+        if (title === '') {
+            alert('Please enter a book title.');
+            return;
+        }
+
+        const readingLog = document.getElementById('reading-log');
+        const bookItem = document.createElement('li');
+        bookItem.className = 'book-item';
+        bookItem.innerHTML = `
+            <span>${title}</span>
+            <button onclick="markAsReading(this)">Mark as Reading</button>
+            <button onclick="markAsDone(this)">Mark as Done</button>
+        `;
+        readingLog.appendChild(bookItem);
+
+        titleInput.value = '';
+    }
+
+    function markAsReading(button) {
+        const bookItem = button.closest('.book-item');
+        bookItem.innerHTML += ' - Currently Reading';
+    }
+
+    function markAsDone(button) {
+        const bookItem = button.closest('.book-item');
+        bookItem.classList.add('done');
+        bookItem.innerHTML += ' - Done Reading';
+    }
+</script>
+
+</body>
+</html>
