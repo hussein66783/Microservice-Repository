@@ -65,6 +65,7 @@ In summary, the adoption of a microservices architecture enhances the Reading Pr
 ## USED TECHNOLOGIES
 
 **Technologies Used**
+
 **HTML:** HTML (Hypertext Markup Language) is used for structuring the content of web pages.
 Documentation: [HTML documentation](https://www.w3schools.com/html/).
 
