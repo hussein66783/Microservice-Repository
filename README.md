@@ -85,7 +85,7 @@ Documentation: [Git documentation](https://docs.github.com/en).
 Documentation: [Team city CI/CD documentation](https://www.jetbrains.com/teamcity/ci-cd-guide/).
 
 
-# NOTE
-This project embraces simplicity and does not heavily rely on external tools or frameworks, providing a lightweight and straightforward solution for tracking reading progress with the essential use of HTML, JavaScript, and CSS.
+> [!NOTE]
+> This project embraces simplicity and does not heavily rely on external tools or frameworks, providing a lightweight and straightforward solution for tracking reading progress with the essential use of HTML, JavaScript, and CSS.
 
-Feel free to customize and enhance the code to suit your specific requirements. Happy reading! 📚
+> Feel free to customize and enhance the code to suit your specific requirements. Happy reading! 📚
