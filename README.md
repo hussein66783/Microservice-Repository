@@ -71,8 +71,6 @@ Documentation: [HTML documentation](https://www.w3schools.com/html/).
 **JavaScript:** JavaScript is a programming language that enables dynamic and interactive behavior on web pages.
 Documentation: [JavaScript documentation](https://www.w3schools.com/js/).
 
-**Typescript:** Adds static typing to JavaScript, enhancing code reliability and developer productivity. 
-Documentation: [Typescript documentation](https://www.typescriptlang.org/docs/).
 
 **CSS:** CSS (Cascading Style Sheets) is used for styling the HTML elements, providing a visually appealing presentation.
 Documentation: [CSS documentation](https://https://www.w3schools.com/css/).
